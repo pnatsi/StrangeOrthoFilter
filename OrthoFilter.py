@@ -52,6 +52,7 @@ for group in groups_binary_df[1:]:
         desired_groups.append(group)
         
 proportion1 = round(len(desired_groups)/len(groups_binary_df),2)
+print(proportion1)
 print("\nFound " + str(len(desired_groups)) + "/" + str(len(groups_binary_df)) + 
       " (" + str(proportion1) + "%) groups." )
 print("Will now check the species composition of these groups")
