@@ -51,7 +51,7 @@ for group in groups_binary_df[1:]:
     if group.count('1') <= threshold :
         desired_groups.append(group)
         
-proportion1 = round(len(desired_groups)/len(groups_binary_df),2)
+proportion1 = len(desired_groups)/len(groups_binary_df)
 print(proportion1)
 print("\nFound " + str(len(desired_groups)) + "/" + str(len(groups_binary_df)) + 
       " (" + str(proportion1) + "%) groups." )
