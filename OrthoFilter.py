@@ -96,9 +96,9 @@ for group in desired_groups_labels:
         ids_to_remove.append(group[0])
     
 proportion2 = float(len(ids_to_remove)) / float(len(desired_groups_labels))
-print("\nRemoved " + str(len(ids_to_remove)) + "/" + str(len(desired_groups_labels)) + " groups (" + 
+print("\nRemoved " + str(len(ids_to_remove)) + "/" + str(len(desired_groups_labels)) + " (" + 
       str(round(proportion2,2)) + 
-      "%) with only one species present or with heterogeneous composition.")
+      "%) groups with only one species present or with heterogeneous composition.")
 print("\nWill now write the alignment file (this may take a while)")
 
 
