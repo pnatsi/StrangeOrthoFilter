@@ -8,7 +8,9 @@ footer = "Who \n Paschalis Natsidis (p.natsidis@ucl.ac.uk); \n \nWhere \n Telfor
 
 parser = argparse.ArgumentParser(description = usage, prog = toolname, epilog = footer, formatter_class=argparse.RawDescriptionHelpFormatter,)
 parser.add_argument('-i', metavar = 'filename', dest = 'groups_binary', required = True,
-                    help = 'file w/ gene counts (from OrthoFinder output)')
+                    help = 'file w/ gene presence/absence matrix (tsv format)')
+parser.add_argument('-l', metavar = 'filename', dest = 'labels', required = True,
+                    help = 'file w/ species and their labels (tsv format)')
 parser.add_argument('-o', metavar = 'filename', dest = 'output', required = True,
                     help = 'directory to write the output alignment file')
 parser.add_argument('-t', type=int, dest = 'user_threshold', required = True,
@@ -20,6 +22,7 @@ args = parser.parse_args()
 
 #READ FILENAMES FROM USER INPUT
 groups_binary_file = args.groups_binary
+labels_file = args.labels
 output_dir = args.output
 
 
@@ -32,7 +35,7 @@ groups_binary_df = [x.strip().split("\t") for x in lines]
 species = groups_binary_df[0]
 
 #LOAD LABELS
-g = open("/Users/wigo/Desktop/projects/xeno_ortho/155_species/NBDEL.txt", "r")
+g = open(labels_file, "r")
 lines = g.readlines()
 labels = [x.strip().split("\t")[1] for x in lines]
 
