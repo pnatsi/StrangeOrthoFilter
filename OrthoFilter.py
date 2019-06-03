@@ -2,7 +2,7 @@ import argparse
 
 #HERE STARTS THE ARGUMENT DEFINING
 usage = "A program to remove orthogroups with strange species composition from a gene presence/absence matrix. \nPlease provide full paths for every input file!"
-toolname = "StrangeOrthoRemover"
+toolname = "OrthoFilter"
 footer = "Who \n Paschalis Natsidis (p.natsidis@ucl.ac.uk); \n \nWhere \n Telford Lab, UCL;\n\
  ITN IGNITE; \n  \nWhen\n May 2019; \n\n"
 
