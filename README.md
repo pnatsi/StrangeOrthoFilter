@@ -11,4 +11,13 @@ Argument    |  Description
 -t int | maximum orthogroup size to be checked for species composition 
 <br>  
 
+<br> 
+Who
+Paschalis Natsidis, PhD candidate (p.natsidis@ucl.ac.uk); 
 
+Where
+Telford Lab, UCL;
+ITN IGNITE; 
+
+When
+May 2019;
