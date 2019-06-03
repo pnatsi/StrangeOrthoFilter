@@ -51,7 +51,8 @@ for group in groups_binary_df[1:]:
     if group.count('1') <= threshold :
         desired_groups.append(group)
         
-print("\nFound " + str(len(desired_groups)) + "/" + str(len(groups_binary_df)) + " groups." )
+print("\nFound " + str(len(desired_groups)) + "/" + str(len(groups_binary_df)) + 
+      " (" + str(round(len(desired_groups)/len(groups_binary_df),2)) + "%) groups." )
 print("Will now check the species composition of these groups")
 
 
@@ -94,7 +95,7 @@ for group in desired_groups_labels:
         ids_to_remove.append(group[0])
     
 print("\nRemoved " + str(len(ids_to_remove)) + " groups (" + 
-      str(round(len(ids_to_remove)/len(desired_groups_labels), 2)) + 
+      str( round(len(ids_to_remove)/len(desired_groups_labels), 2) ) + 
       "%) with only one species present or with heterogeneous composition.")
 print("\nWill now write the alignment file (this may take a while)")
 
