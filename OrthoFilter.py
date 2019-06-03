@@ -13,7 +13,7 @@ parser.add_argument('-l', metavar = 'filename', dest = 'labels', required = True
                     help = 'file w/ species and their labels (tsv format)')
 parser.add_argument('-o', metavar = 'filename', dest = 'output', required = True,
                     help = 'directory to write the output alignment file')
-parser.add_argument('-t', type=int, dest = 'user_threshold', required = True,
+parser.add_argument('-t', type=int, metavar = 'int', dest = 'user_threshold', required = True,
                     help = 'maximum orthogroup size to be checked for species composition heterogeneity')
 
 #parser.print_help()
