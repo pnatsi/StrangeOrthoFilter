@@ -51,10 +51,9 @@ for group in groups_binary_df[1:]:
     if group.count('1') <= threshold :
         desired_groups.append(group)
         
-proportion1 = len(desired_groups)/len(groups_binary_df)
-print(proportion1)
+proportion1 = float(len(desired_groups)) / float(len(groups_binary_df))
 print("\nFound " + str(len(desired_groups)) + "/" + str(len(groups_binary_df)) + 
-      " (" + str(proportion1) + "%) groups." )
+      " (" + str(round(proportion1,2)) + "%) groups." )
 print("Will now check the species composition of these groups")
 
 
@@ -96,9 +95,9 @@ for group in desired_groups_labels:
     if ratio < 1 :
         ids_to_remove.append(group[0])
     
-proportion2 = round(len(ids_to_remove)/len(desired_groups_labels),2)
+proportion2 = float(len(ids_to_remove)) / float(len(desired_groups_labels))
 print("\nRemoved " + str(len(ids_to_remove)) + "/" + str(len(desired_groups_labels)) + " groups (" + 
-      str(proportion2) + 
+      str(round(proportion2,2)) + 
       "%) with only one species present or with heterogeneous composition.")
 print("\nWill now write the alignment file (this may take a while)")
 
