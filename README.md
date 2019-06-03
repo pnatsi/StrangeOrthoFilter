@@ -16,7 +16,7 @@ Argument    |  Description
 ```
 python OrthoFilter.py -i /Users/pnatsi/orthology/ortho_matrix.tsv -l /Users/pnatsi/orthology/labels.tsv -o /Users/pnatsi/orthology/ -t 10
 ```
-Will check all orthogroups containing 10 or less species, and keep only the ones which all its species have the same label.
+Will check all orthogroups containing 10 or less species, and keep only those of which all species have the same label.
 
 **Careful! Only full paths to the input files are currently supported**
 
