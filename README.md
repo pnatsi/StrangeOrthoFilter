@@ -8,7 +8,7 @@ Argument    |  Description
 :-------------:|:-----------------------
 -i filename | file w/ gene presence/absence matrix (tsv format)
 -o filename | directory to write the output file
--t int | maximum size of orthogroups to be checked for species composition heterogeneity
+-t int | maximum orthogroup size to be checked for species composition heterogeneity
 <br>  
 
 For example, `-t 10` will check all groups containing up to 10 species, and will keep only the groups with all species from the same user-defined group (e.g. a group with 8 species, all Deuterostomes)
