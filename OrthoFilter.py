@@ -4,7 +4,7 @@ import argparse
 usage = "A program to remove orthogroups with strange species composition from a gene presence/absence matrix. \nPlease provide full paths for every input file!"
 toolname = "OrthoFilter"
 footer = "Who \n Paschalis Natsidis (p.natsidis@ucl.ac.uk); \n \nWhere \n Telford Lab, UCL;\n\
- ITN IGNITE; \n  \nWhen\n May 2019; \n\n"
+ ITN IGNITE; \n  \nWhen\n June 2019; \n\n"
 
 parser = argparse.ArgumentParser(description = usage, prog = toolname, epilog = footer, formatter_class=argparse.RawDescriptionHelpFormatter,)
 parser.add_argument('-i', metavar = 'filename', dest = 'groups_binary', required = True,
