@@ -1,6 +1,6 @@
 # StrangeOrthoRemover
 
-A script to remove orthogroups with strange species composition, according to a list of labelled (by the user) species. <br>
+A script to remove orthogroups with strange species composition, according to a list of labelled species provided by the user. <br>
 Orthogroups with only one species present or with a larger size but with heterogeneous composition will be removed.
 
 ## Arguments
