@@ -7,7 +7,7 @@ For example, an orthogroup with one protostome and one ctenophore gene makes no 
 Argument    |  Description             
 :-------------:|:-----------------------
 -i filename | file w/ gene presence/absence matrix (tsv format)
--o filename | directory to write the output file(s)
+-o filename | directory to write the output file
 -t int | maximum size of orthogroups to be checked for species composition heterogeneity
 <br>  
 
