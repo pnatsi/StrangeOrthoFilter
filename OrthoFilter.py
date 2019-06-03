@@ -94,7 +94,7 @@ for group in desired_groups_labels:
     if ratio < 1 :
         ids_to_remove.append(group[0])
     
-print("\nRemoved " + str(len(ids_to_remove)) + " groups (" + 
+print("\nRemoved " + str(len(ids_to_remove)) + "/" + str(len(desired_groups_labels)) + " groups (" + 
       str( round(len(ids_to_remove)/len(desired_groups_labels), 2) ) + 
       "%) with only one species present or with heterogeneous composition.")
 print("\nWill now write the alignment file (this may take a while)")
