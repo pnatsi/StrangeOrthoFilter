@@ -7,9 +7,18 @@ Orthogroups with only one species present or with larger size but heterogeneous 
 Argument    |  Description             
 :-------------:|:-----------------------
 -i filename | file w/ gene presence/absence matrix
+-l filename | file w/ species and their labels
 -o filename | directory to write the output file
 -t int | maximum orthogroup size to be checked for species composition 
 <br>  
+## Example usage
+
+```
+python OrthoFilter.py -i /Users/pnatsi/orthology/ortho_matrix.tsv -l /Users/pnatsi/orthology/labels.tsv -o /Users/pnatsi/orthology/ -t 10
+```
+Will check all orthogroups containing 10 or less species, and keep only the ones which all its species have the same label.
+
+**Careful! Only full paths to the input files are currently supported**
 
 <br>
 Who<br> 
