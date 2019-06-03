@@ -10,7 +10,7 @@ Argument    |  Description
 -l filename | file w/ species and their labels
 -o filename | directory to write the output file
 -t int | maximum orthogroup size to be checked for species composition 
-<br>  
+
 ## Example usage
 
 ```
