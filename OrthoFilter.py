@@ -107,7 +107,7 @@ for group in groups_binary_df[1:]:
     if group[0] not in ids_to_remove:
         groups_to_write.append(group)
 
-output = open("/Users/wigo/Desktop/projects/xeno_ortho/155_species/filtered_155.phy", "w")
+output = open(output_dir + "filtered.phy", "w")
 
 output.write(str(len(species)) + " " + str(len(groups_binary_df) - len(ids_to_remove) - 1) + "\n")
 
