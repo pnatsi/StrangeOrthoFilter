@@ -1,6 +1,6 @@
 # OrthoFilter
 
-A script to remove orthogroups with strange species composition, according to a list of labelled species provided by the user. Input files must be in tsv format. <br> <br>
+A script to remove orthogroups with strange species composition, i.e. orthogroups that do not comply to user-defined sets of species. Input files must be in tsv format. <br> <br>
 Orthogroups with only one species present or with larger size but heterogeneous species composition will be removed.
 
 ## Arguments
